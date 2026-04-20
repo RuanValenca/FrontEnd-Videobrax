@@ -1,0 +1,14 @@
+.bulletPoint {
+  max-width: 70%;
+  max-height: 100px;
+  background: var(--bg-dark2);
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 60px;
+  margin: 0 auto;
+  color: var(--text-main);
+  position: relative;
+  bottom: 20px;
+
+  transition: transform 0.1s linear;
+}

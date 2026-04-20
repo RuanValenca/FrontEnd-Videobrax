@@ -1,0 +1,23 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--text-main);
+  background: var(--bg-dark3);
+  text-align: left;
+}
+
+.buttonProduct {
+  border-radius: 30px;
+  background: var(--bg-yellow);
+}
+
+.imgProduct {
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 1) 100%),
+    url("../../assets/bgPresentation.png");
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
