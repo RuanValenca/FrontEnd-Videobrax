@@ -83,3 +83,69 @@
   padding: 3px;
   transform: rotate(-45deg);
 }
+
+@media (max-width: 1024px) {
+  .switcherProduct {
+    width: 100%;
+    max-width: 300px;
+    height: 210px;
+  }
+
+  .switcherProduct img {
+    width: 160px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .switcherProduct {
+    width: 50%;
+    max-width: none;
+    height: 200px;
+    border-radius: 25px;
+  }
+
+  .productList {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .switcherProduct img {
+    width: 140px;
+    height: 120px;
+  }
+  .switcherProduct:hover img {
+    transform: translateY(-30px) scale(1.3);
+  }
+
+  .btn {
+    height: 42px;
+    font-size: 0.85rem;
+  }
+
+  .switcherProduct:hover .text {
+    transform: translateY(-30px);
+  }
+}
+
+@media (max-width: 560px) {
+  .switcherProduct {
+    height: 180px;
+    border-radius: 20px;
+  }
+
+  .switcherProduct img {
+    width: 120px;
+    height: 100px;
+  }
+
+  .text h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    width: 85%;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+}

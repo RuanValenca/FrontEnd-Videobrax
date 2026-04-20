@@ -15,7 +15,9 @@ export default function Products() {
           </div>
 
           <button className="btnProduct">
-            Lorem ipsum <span className="caretProduct"></span>
+            <a href="https://gopresence.com/br/switcher-mini">
+              Lorem ipsum <span className="caretProduct"></span>
+            </a>
           </button>
         </div>
 

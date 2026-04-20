@@ -46,13 +46,16 @@
   width: 95%;
 }
 
-.imageInfo img {
+.imageInfo {
   width: 100%;
+  height: 550px;
+  background-image: url("../../assets/img/bgPodcast.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: 2;
+  border-radius: 45px 0 0 45px;
 }
 
 .socialMedia {
@@ -132,4 +135,156 @@
   width: 400px;
   height: 400px;
   object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .companyInfo {
+    width: 90%;
+    padding: 0 0 0 10%;
+  }
+
+  .textInfo h2 {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+
+  .socialMedia {
+    gap: 1.5rem;
+  }
+
+  .socialMedia img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .companyItems {
+    padding-bottom: 10%;
+  }
+
+  .item {
+    padding: 2.5rem;
+    width: 190px;
+    height: 170px;
+  }
+
+  .layer {
+    width: 430px;
+    height: 430px;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyInfo {
+    width: 90%;
+    padding: 10% 5%;
+    grid-template-columns: 1fr;
+  }
+
+  .textInfo {
+    padding: 0;
+  }
+
+  .textInfo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+
+  .textInfo p {
+    width: 100%;
+  }
+
+  .imageInfo {
+    background-image: url("../../assets/img/bgPodcastFull.png");
+    margin-top: 30px;
+    border-radius: 45px;
+  }
+
+  .socialMedia {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 30px;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 25px 0;
+    bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .companyItems {
+    height: auto;
+    margin-top: 60px;
+    padding-bottom: 60px;
+    gap: 40px;
+  }
+
+  .companyItems h2 {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    padding: 0 5%;
+  }
+
+  .gridItems {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+
+  .layer {
+    width: 490px;
+    height: 490px;
+  }
+}
+
+@media (max-width: 560px) {
+  .companyInfo {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .textInfo h2 {
+    font-size: 1.3rem;
+  }
+
+  .socialMedia {
+    gap: 1rem;
+  }
+
+  .socialMedia img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .socialMedia img.zoom {
+    transform: scale(1.5);
+  }
+
+  .gridItems {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+
+  .item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .layer {
+    width: 380px;
+    height: 380px;
+    left: 0;
+    bottom: 0;
+  }
 }

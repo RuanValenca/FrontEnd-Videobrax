@@ -1,5 +1,4 @@
 import "./styles.css";
-import bgPodcast from "../../assets/img/bgPodcast.png";
 import twitch from "../../assets/img/twitch.png";
 import youtube from "../../assets/img/youtube.png";
 import facebook from "../../assets/img/facebook.png";
@@ -11,7 +10,7 @@ import layer from "../../assets/img/Layer 1.png";
 
 export default function CompanyInfo() {
   return (
-    <section className="companyInfoSection">
+    <section id="Contact" className="companyInfoSection">
       <div className="companyInfo">
         <div className="textInfo">
           <h3>LIVE</h3>
@@ -24,9 +23,7 @@ export default function CompanyInfo() {
             Mauris venenatis augue quis felis viverra bibendum.
           </p>
         </div>
-        <div className="imageInfo">
-          <img src={bgPodcast} alt="Casal em Podcast" />
-        </div>
+        <div className="imageInfo"></div>
         <div className="socialMedia">
           <img src={twitch} alt="Twitch" />
           <img src={youtube} alt="YouTube" />

@@ -4,14 +4,15 @@ import logo from "../../assets/img/logo-gop-white.svg";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
+      setMenuOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -21,18 +22,33 @@ export default function Header() {
         <div>
           <img src={logo} alt="Logo GoPresence" />
         </div>
-        <ul className="navLinks">
+
+        <button className="menuToggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <ul className={`navLinks ${menuOpen ? "open" : ""}`}>
           <li>
-            <a href="#Home">Início</a>
+            <a href="#Home" onClick={() => setMenuOpen(false)}>
+              Início
+            </a>
           </li>
           <li>
-            <a href="#Product">Produtos</a>
+            <a href="#Product" onClick={() => setMenuOpen(false)}>
+              Produtos
+            </a>
           </li>
           <li>
-            <a href="#About">Sobre</a>
+            <a href="#About" onClick={() => setMenuOpen(false)}>
+              Sobre
+            </a>
           </li>
           <li>
-            <a href="#Contact">Contato</a>
+            <a href="#Contact" onClick={() => setMenuOpen(false)}>
+              Contato
+            </a>
           </li>
         </ul>
       </nav>

@@ -13,3 +13,46 @@
   transition: transform 0.1s linear;
   text-align: center;
 }
+
+.bulletPoint {
+  font-family: var(--outfit-light);
+  max-width: 70%;
+  max-height: 100px;
+  background: var(--bg-dark2);
+  padding: 1.5rem 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 60px;
+  margin: 0 auto;
+  color: var(--text-main);
+  position: relative;
+  bottom: 20px;
+  transition: transform 0.1s linear;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .bulletPoint {
+    max-width: 85%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bulletPoint {
+    max-width: 90%;
+    font-size: 1rem;
+    padding: 1.2rem 2rem;
+    border-radius: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .bulletPoint {
+    max-width: 95%;
+    max-height: none;
+    font-size: 0.9rem;
+    padding: 1rem 1.5rem;
+    border-radius: 30px;
+    bottom: 10px;
+  }
+}
