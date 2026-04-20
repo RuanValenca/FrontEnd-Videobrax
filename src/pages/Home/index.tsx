@@ -13,6 +13,7 @@ export default function Home() {
       <BulletPoint text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris laoreet risus neque, id convallis nisl euismod sed. Nullam neque nisl, blandit sed porta non." />
       <CompanyInfo />
       <Products />
+      <About />
     </>
   );
 }

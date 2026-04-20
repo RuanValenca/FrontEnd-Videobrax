@@ -1,3 +1,13 @@
+.companyInfoSection h2 {
+  font-family: var(--outfit-bold);
+  color: var(--text-main);
+}
+
+.companyInfoSection p {
+  font-family: var(--manrope);
+  color: var(--text-main);
+}
+
 .companyInfo {
   width: 85%;
   padding: 0 0 0 15%;
@@ -15,13 +25,12 @@
 
 .textInfo h3 {
   color: var(--text-purple);
+  font-family: var(--jura-bold);
   margin: 0;
   font-weight: 500;
 }
 
 .textInfo h2 {
-  color: var(--text-main);
-  font-weight: bold;
   text-align: left;
   font-size: 2rem;
   line-height: 2.5rem;
@@ -30,8 +39,9 @@
 }
 
 .textInfo p {
-  text-align: left;
+  font-family: var(--manrope);
   color: var(--text-muted);
+  text-align: left;
   margin: 0;
   width: 95%;
 }
@@ -100,8 +110,8 @@
   justify-content: center;
   padding: 1.5rem;
   border-radius: 45px;
-  width: 250px;
-  height: 200px;
+  width: 230px;
+  height: 190px;
   background: var(--bg-dark2);
 }
 

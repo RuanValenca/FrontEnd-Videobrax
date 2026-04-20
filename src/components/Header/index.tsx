@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./styles.css";
-import logo from "../../assets/logo-gop-white.svg";
+import logo from "../../assets/img/logo-gop-white.svg";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,13 +26,13 @@ export default function Header() {
             <a href="#Home">Início</a>
           </li>
           <li>
-            <a href="#">Produtos</a>
+            <a href="#Product">Produtos</a>
           </li>
           <li>
-            <a href="#">Sobre</a>
+            <a href="#About">Sobre</a>
           </li>
           <li>
-            <a href="#">Contato</a>
+            <a href="#Contact">Contato</a>
           </li>
         </ul>
       </nav>

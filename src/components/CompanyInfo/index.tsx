@@ -1,13 +1,13 @@
 import "./styles.css";
-import bgPodcast from "../../assets/bgPodcast.png";
-import twitch from "../../assets/twitch.png";
-import youtube from "../../assets/youtube.png";
-import facebook from "../../assets/facebook.png";
-import instagram from "../../assets/instagram.png";
-import tiktok from "../../assets/tiktok.png";
-import zoom from "../../assets/zoom.png";
-import star from "../../assets/Vector.png";
-import layer from "../../assets/Layer 1.png";
+import bgPodcast from "../../assets/img/bgPodcast.png";
+import twitch from "../../assets/img/twitch.png";
+import youtube from "../../assets/img/youtube.png";
+import facebook from "../../assets/img/facebook.png";
+import instagram from "../../assets/img/instagram.png";
+import tiktok from "../../assets/img/tiktok.png";
+import zoom from "../../assets/img/zoom.png";
+import star from "../../assets/img/Vector.png";
+import layer from "../../assets/img/Layer 1.png";
 
 export default function CompanyInfo() {
   return (

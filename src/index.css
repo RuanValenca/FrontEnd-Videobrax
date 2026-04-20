@@ -1,56 +1,120 @@
+@font-face {
+  font-family: "Jura";
+  src: url("./assets/fonts/Jura/Jura-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JuraBold";
+  src: url("./assets/fonts/Jura/Jura-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("./assets/fonts/Manrope/Manrope-Regular.ttf") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ManropeBold";
+  src: url("./assets/fonts/Manrope/Manrope-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ManropeSemiBold";
+  src: url("./assets/fonts/Manrope/Manrope-SemiBold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/Outfit/Outfit-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OutfitLight";
+  src: url("./assets/fonts/Outfit/Outfit-Light.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OutfitBold";
+  src: url("./assets/fonts/Outfit/Outfit-Bold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OutfitSemiBold";
+  src: url("./assets/fonts/Outfit/Outfit-SemiBold.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --text-main: #ffffff;
   --text-dark: #222222;
   --text-cyan: #43c6eb;
   --text-purple: #a422ff;
-  --text-muted:#B9B9B9;
+  --text-muted: #b9b9b9;
   --bg: #fff;
   --bg-dark1: #222222;
   --bg-dark2: #161616;
   --bg-dark3: #0c0c0c;
-  --bg-yellow: #DBCE7B;
+  --bg-yellow: #dbce7b;
 
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --jura: "Jura";
+  --jura-bold: "JuraBold";
 
-  font: 18px/145% var(--sans);
+  --manrope: "Manrope";
+  --manrope-bold: "ManropeBold";
+
+  --outfit: "Outfit";
+  --outfit-light: "OutfitLight";
+  --outfit-bold: "OutfitBold";
+  --outfit-semibold: "OutfitSemiBold";
+
+  font: 18px/145% var(--manrope);
   letter-spacing: 0.18px;
   color: var(--text-main);
-  background: var(--bg);
+  background: var(--bg-dark1);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media (max-width: 1024px) {
-    :root {
-      font-size: 16px;
-    }
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
   }
+}
 
-  #root {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-  }
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 
-  html,
-  body {
-    height: 100%;
-  }
+html,
+body {
+  height: 100%;
+}
 
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background: var(--bg-dark1);
-    color: var(--text-main);
-    overflow-x: hidden;
-  }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-dark1);
+  color: var(--text-main);
+  overflow-x: hidden;
+}
 
-  a {
-    text-decoration: none;
-  }
+a {
+  text-decoration: none;
 }

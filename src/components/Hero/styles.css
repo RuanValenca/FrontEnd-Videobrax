@@ -2,7 +2,7 @@
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)),
     linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../assets/bgSwitch.png");
+    url("../../assets/img/bgSwitch.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19,9 +19,11 @@
 }
 
 .heroSlogan {
+  font-family: var(--outfit-bold);
   text-align: right;
   line-height: 3rem;
   margin-left: auto;
+  word-spacing: 5px;
   width: 40%;
   font-size: 2.5rem;
 }

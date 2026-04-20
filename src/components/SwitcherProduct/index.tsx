@@ -1,5 +1,5 @@
 import "./styles.css";
-import switcher from "../../assets/switcherMini.png";
+import switcher from "../../assets/img/switcherMini.png";
 
 export default function SwitcherProduct() {
   return (
@@ -8,8 +8,8 @@ export default function SwitcherProduct() {
         <img src={switcher} alt="Switcher" />
 
         <div className="text">
-          <h3>Go Presence</h3>
-          <span>Switcher Mini</span>
+          <span>GoPresence</span>
+          <h3>Switcher Mini</h3>
         </div>
       </div>
 

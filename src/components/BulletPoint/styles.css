@@ -1,4 +1,5 @@
 .bulletPoint {
+  font-family: var(--outfit-light);
   max-width: 70%;
   max-height: 100px;
   background: var(--bg-dark2);
@@ -9,6 +10,6 @@
   color: var(--text-main);
   position: relative;
   bottom: 20px;
-
   transition: transform 0.1s linear;
+  text-align: center;
 }
