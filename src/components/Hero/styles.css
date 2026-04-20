@@ -49,6 +49,12 @@
 }
 
 @media (max-width: 560px) {
+  .hero {
+    background-position: 40% 50%;
+    height: 100vh;
+    width: 100%;
+  }
+
   .heroContent {
     max-width: 90%;
   }

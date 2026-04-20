@@ -25,12 +25,48 @@ export default function CompanyInfo() {
         </div>
         <div className="imageInfo"></div>
         <div className="socialMedia">
-          <img src={twitch} alt="Twitch" />
-          <img src={youtube} alt="YouTube" />
-          <img src={facebook} alt="Facebook" />
-          <img src={instagram} alt="Instagram" />
-          <img src={tiktok} alt="TikTok" />
-          <img src={zoom} alt="Zoom" className="zoom" />
+          <a
+            href="https://www.twitch.tv/gopresence"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={twitch} alt="Twitch" />
+          </a>
+          <a
+            href="https://www.facebook.com/gopresence"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={facebook} alt="Facebook" />
+          </a>
+          <a
+            href="https://www.instagram.com/gopresence"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={instagram} alt="Instagram" />
+          </a>
+          <a
+            href="https://www.youtube.com/@gopresence"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={youtube} alt="YouTube" />
+          </a>
+          <a
+            href="https://www.tiktok.com/@gopresence"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={tiktok} alt="TikTok" />
+          </a>
+          <a
+            href="https://www.zoom.us/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={zoom} alt="Zoom" className="zoom" />
+          </a>
         </div>
       </div>
       <div className="companyItems">

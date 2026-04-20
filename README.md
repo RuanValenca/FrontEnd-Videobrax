@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+# 📌 Teste Técnico – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Sobre o projeto
 
-Currently, two official plugins are available:
+Este projeto foi desenvolvido como parte de um teste técnico para a vaga de Frontend. O objetivo foi reproduzir um layout proposto, aplicando boas práticas de desenvolvimento, organização de código e atenção aos detalhes visuais.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚛️ Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React**
+* **HTML5**
+* **CSS3**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Decisões técnicas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Optei por utilizar **React** por ser uma biblioteca moderna, amplamente adotada no mercado e alinhada com aplicações escaláveis. Além disso, considerando o interesse da empresa em utilizar React em projetos futuros, essa escolha também demonstra familiaridade com o ecossistema e preparo para contribuir nesse contexto.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Mesmo utilizando React, fiz questão de aplicar **HTML e CSS de forma estruturada**, evidenciando domínio dos fundamentos, que são essenciais para a vaga.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧱 Estrutura do projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+O projeto foi organizado pensando em **manutenção e escalabilidade**, seguindo uma separação clara de responsabilidades:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* Componentização das seções da interface
+* Separação entre lógica e estilização
+* Organização de pastas para facilitar leitura e evolução do código
+
+Essa abordagem permite reutilização de componentes e torna o código mais limpo e previsível.
+
+---
+
+## 🎨 Interface e experiência
+
+* Fidelidade ao layout proposto
+* Uso de **animações e transições** inspiradas no site da empresa, buscando manter consistência visual
+* Atenção a espaçamentos, alinhamentos e hierarquia de informação
+
+---
+
+## 🛠️ Boas práticas aplicadas
+
+* Código limpo e legível
+* Componentes reutilizáveis
+* Separação de responsabilidades
+* Uso de padrões comuns do mercado
+
+---
+
+## 📌 Considerações finais
+
+O foco deste projeto foi não apenas atender aos requisitos visuais, mas também demonstrar organização, clareza de código e preocupação com a experiência do usuário.
+
+Estou à disposição para explicar qualquer parte da implementação.

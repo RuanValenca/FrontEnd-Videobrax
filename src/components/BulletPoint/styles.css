@@ -48,11 +48,11 @@
 
 @media (max-width: 560px) {
   .bulletPoint {
-    max-width: 95%;
+    max-width: 75%;
     max-height: none;
     font-size: 0.9rem;
     padding: 1rem 1.5rem;
     border-radius: 30px;
-    bottom: 10px;
+    bottom: 40px;
   }
 }
